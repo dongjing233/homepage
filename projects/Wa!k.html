@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="../css/style.css" />
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../scripts.js"></script>
+    <script src="../airtable.browser.js"></script>
+    <title>Wa!k</title>
+  </head>
+
+  <nav>
+    <button id="logo" type="button" class="collapsible"></button>
+    <div class="content">
+      <br /><br /><br /><br /><br /><br />
+
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../pages/about.html">About</a></li>
+      <li><a href="../pages/contact.html">Contact</a></li>
+
+      <br /><br /><br />
+
+      <li><a href="../pages/MotionDesign.html">Motion Design</a></li>
+      <li><a href="../pages/javascript.html">Javascript</a></li>
+      <li><a href="../pages/UI+UX.html">UI/UX</a></li>
+      <li><a href="../pages/photography.html">Photography</a></li>
+      <li><a href="../pages/Typography.html">Visuals</a></li>
+
+      <br /><br /><br />
+      <li>
+        <a href="https://www.instagram.com/3daysdong/"
+          ><b>Instagram: @3daysdong</b></a
+        >
+      </li>
+    </div>
+  </nav>
+
+  <div class="textbox">
+    <header>Wa!k</header>
+    <p>
+      Nov 2020
+      <br />
+      Collaborate with: Aldora Wang
+    </p>
+    <br /><br />
+
+    <header>Description of Our World</header>
+    <p>
+      After 30-40 years, the distribution of resources will become more unequal
+      because there is a lean of resources in one-child families. The only child
+      in a family has more chances to get access to education resources, and it
+      makes it even harder for people to get rid of poverty through education.
+      At the same time, the only child in the family needs to be responsible for
+      taking care of all the elderly people. The structure of the family creates
+      more burden for the child and may even cause mental health problems. The
+      only child has problems in dealing with complicated social relationships
+      to some extent. The population of males will surpass the population of
+      females, which leads to further marriage problems. The one-child policy
+      will also lead to an aging population. The percentage of elders might take
+      a big part in the population in China after the one-child policy. In
+      China, there is a tradition to take care and look after their parents when
+      they are old. In this generation, most families of two parents only have
+      one child. Therefore, there might be more burden on the only child. It
+      might be hard for their child to take care of their parents alone, without
+      siblings. Society might want to build more nursing homes, elder
+      apartments, services, and products for elders.
+    </p>
+    <br /><br />
+    <header>
+      Walking Stick
+    </header>
+    <p>
+      This walking stick has an adjustable screen next to the handle that people
+      can easily fold in, and users can adjust the height of the walking stick
+      depending on the user’s height or the user’s needs.
+    </p>
+
+    <img
+      src="https://dl.airtable.com/.attachmentThumbnails/cc14cf4a3a1d14e58e4fa1531c6e57ae/d4ce5fd7"
+      style="width:95%; height:100%;"
+    />
+
+    <br /><br />
+    <header>
+      UI
+    </header>
+    <p>
+      We chose this navy color as our theme color because it conveys peaceful
+      and reliable visual information. The color and the big font size are
+      readable and friendly for the elderly. Users can chat with AI when they
+      feel lonely or boring. As the users give instructions to the AI, the AI
+      will execute it and give feedback to the users.
+    </p>
+
+    <br /><br />
+    <header>
+      UI for Parents
+    </header>
+    <p>
+      We divide the interface into 3 fundamental sections, navigation, chatting,
+      and music player. Users are able to switch between these 3 sections by
+      simply tapping on the navigation bar or giving verbal instructions. The
+      navigation function is easy to operate, users can tell the AI where they
+      want to go, the AI will calculate the safest and fastest route and guide
+      them to their destinations. The users can create their own playlist or
+      play some random music recommend by the AI in the music player.
+    </p>
+    <img
+      src="https://dl.airtable.com/.attachmentThumbnails/1bc81da120a7747ceca7e5068eb5d9b7/821e4a15"
+      style="width:95%; height:100%;"
+    />
+
+    <img
+      src="https://dl.airtable.com/.attachmentThumbnails/9c4a5b529315e4c5e30a2ba7aef43005/2b33c887"
+      style="width:95%; height:100%;"
+    />
+
+    <br /><br />
+    <header>
+      UI for Children
+    </header>
+    <p>
+      The app for children allows them to report missing person to local police
+      office and find the location of their parents on map. Children can call
+      their parents using the shortcut when they miss them or when there is an
+      emergency.
+    </p>
+    <img
+      src="https://dl.airtable.com/.attachmentThumbnails/673ea37733653841406bc0ae98fe5acd/0b42bb7a"
+      style="width:95%; height:100%;"
+    />
+  </div>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+</html>

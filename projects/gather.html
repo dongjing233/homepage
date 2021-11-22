@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="../css/style.css" />
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../scripts.js"></script>
+    <script src="../airtable.browser.js"></script>
+    <title>Live Alone, Gather Together</title>
+  </head>
+
+  <nav>
+    <button id="logo" type="button" class="collapsible"></button>
+    <div class="content">
+      <br /><br /><br /><br /><br /><br />
+
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../pages/about.html">About</a></li>
+      <li><a href="../pages/contact.html">Contact</a></li>
+
+      <br /><br /><br />
+
+      <li><a href="../pages/MotionDesign.html">Motion Design</a></li>
+      <li><a href="../pages/javascript.html">Javascript</a></li>
+      <li><a href="../pages/UI+UX.html">UI/UX</a></li>
+      <li><a href="../pages/photography.html">Photography</a></li>
+      <li><a href="../pages/Typography.html">Visuals</a></li>
+
+      <br /><br /><br />
+      <li>
+        <a href="https://www.instagram.com/3daysdong/"
+          ><b>Instagram: @3daysdong</b></a
+        >
+      </li>
+    </div>
+  </nav>
+
+  <div class="textbox">
+    <header>Live Alone, Gather Together</header>
+    <p>
+      Sep 2021
+      <br />
+      Personal Project
+    </p>
+    <br /><br />
+
+    <img
+      src="https://cdn.glitch.me/a484e647-8b88-455d-846a-45ea71e03e81%2FArtboard%2015%40150x.png?v=1635909638591"
+      style="width:95%; height:100%;"
+    />
+
+    <img
+      src="https://cdn.glitch.me/a484e647-8b88-455d-846a-45ea71e03e81%2FArtboard%2016%40150x.png?v=1635909638591"
+      style="width:95%; height:100%;"
+    />
+
+    <img
+      src="https://cdn.glitch.me/a484e647-8b88-455d-846a-45ea71e03e81%2FArtboard%2017%40150x.png?v=1635909640555"
+      style="width:95%; height:100%;"
+    />
+
+    <img
+      src="https://cdn.glitch.me/a484e647-8b88-455d-846a-45ea71e03e81%2FArtboard%2017%40150x.png?v=1635909640555"
+      style="width:95%; height:100%;"
+    />
+
+    <img
+      src="https://cdn.glitch.me/a484e647-8b88-455d-846a-45ea71e03e81%2FArtboard%2020%40150x.png?v=1635909638591"
+      style="width:95%; height:100%;"
+    />
+  </div>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+</html>

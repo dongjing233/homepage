@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="../css/style.css" />
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../scripts.js"></script>
+    <script src="../airtable.browser.js"></script>
+    <title>UI + UX</title>
+  </head>
+
+  <nav>
+    <button id="logo" type="button" class="collapsible"></button>
+    <div class="content">
+      <br /><br /><br /><br /><br /><br />
+
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+
+      <br /><br /><br />
+
+      <li><a href="MotionDesign.html">Motion Design</a></li>
+      <li><a href="javascript.html">Javascript</a></li>
+      <li><a href="UI+UX.html">UI/UX</a></li>
+      <li><a href="photography.html">Photography</a></li>
+      <li><a href="Typography.html">Visuals</a></li>
+
+      <br /><br /><br />
+      <li>
+        <a href="https://www.instagram.com/3daysdong/"
+          ><b>Instagram: @3daysdong</b></a
+        >
+      </li>
+    </div>
+  </nav>
+
+  <div class="textbox">
+    <header>UI + UX</header>
+    <p>
+      Jing studies Communication Design at Parsons School of Design as her
+      minor. She used to work as a UX designer at Mintdropz. She has created
+      apps and websites for different target audience.
+    </p>
+    <header>界面与用户体验</header>
+    <p>
+      董晶在帕森斯设计学院辅修视觉传达.她曾经在Mintdropz担任用户体验设计师.她曾经为不同用户群体设计手机界面和网页.
+    </p>
+  </div>
+
+  <div class="visualframe">
+    <div class="row">
+      <div class="column">
+        <div class="container">
+          <a href="../projects/freshbuy.html">
+            <img
+              src="https://cdn.glitch.me/a484e647-8b88-455d-846a-45ea71e03e81%2Ffreshbuy.jpeg?v=1635183828810"
+              alt="Avatar"
+              class="image"
+              style="width:100%"
+            />
+            <div class="middle">
+              <div class="text">Freshbuy</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="container">
+          <a href="../projects/HiWeather.html">
+            <img
+              src="https://cdn.glitch.me/a484e647-8b88-455d-846a-45ea71e03e81%2Fweather.png?v=1635183828810"
+              alt="Avatar"
+              class="image"
+              style="width:100%"
+            />
+            <div class="middle">
+              <div class="text">Hi Weather</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="container">
+          <a href="../projects/Wa!k.html">
+            <img
+              src="https://cdn.glitch.me/a484e647-8b88-455d-846a-45ea71e03e81%2Fwa!k.png?v=1635183829948"
+              alt="Avatar"
+              class="image"
+              style="width:100%"
+            />
+            <div class="middle">
+              <div class="text">Wa!k</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+</html>

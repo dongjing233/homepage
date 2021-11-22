@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="../css/style.css" />
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact</title>
+  </head>
+
+  <nav>
+    <button id="logo" type="button" class="collapsible"></button>
+    <div class="content">
+      <br /><br /><br /><br /><br /><br />
+
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+
+      <br /><br /><br />
+
+      <li><a href="MotionDesign.html">Motion Design</a></li>
+      <li><a href="javascript.html">Javascript</a></li>
+      <li><a href="UI+UX.html">UI/UX</a></li>
+      <li><a href="photography.html">Photography</a></li>
+      <li><a href="Typography.html">Visuals</a></li>
+
+      <br /><br /><br />
+      <li>
+        <a href="https://www.instagram.com/3daysdong/"
+          ><b>Instagram: @3daysdong</b></a
+        >
+      </li>
+    </div>
+  </nav>
+
+  <div class="textbox">
+    <header>Contact</header>
+
+    <p>
+      Email(US): dongj340@newschool.edu
+    </p>
+    <p>
+      Email(China): 2452036859@qq.com
+    </p>
+    <p>
+      Mobile(US): +1 732-215-2006
+    </p>
+    <p>
+      Mobile(China): 13501661600
+    </p>
+    <p>
+      Wechat: buyongpyq
+    </p>
+
+    <br />
+    <br />
+
+    <header>联系方式</header>
+
+    <p>
+      邮箱(美国): dongj340@newschool.edu
+    </p>
+    <p>
+      邮箱(中国): 2452036859@qq.com
+    </p>
+    <p>
+      手机(美国): +1 732-215-2006
+    </p>
+    <p>
+      手机(中国): 13501661600
+    </p>
+    <p>
+      微信: buyongpyq
+    </p>
+  </div>
+
+  <div class="visualframe"></div>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+</html>

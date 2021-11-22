@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="../css/style.css" />
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Javascript</title>
+  </head>
+
+  <nav>
+    <button id="logo" type="button" class="collapsible"></button>
+    <div class="content">
+      <br /><br /><br /><br /><br /><br />
+
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+
+      <br /><br /><br />
+
+      <li><a href="MotionDesign.html">Motion Design</a></li>
+      <li><a href="javascript.html">Javascript</a></li>
+      <li><a href="UI+UX.html">UI/UX</a></li>
+      <li><a href="photography.html">Photography</a></li>
+      <li><a href="Typography.html">Visuals</a></li>
+
+      <br /><br /><br />
+      <li>
+        <a href="https://www.instagram.com/3daysdong/"
+          ><b>Instagram: @3daysdong</b></a
+        >
+      </li>
+    </div>
+  </nav>
+
+  <div class="textbox">
+    <header>JavaScript</header>
+    <p>
+      Jing likes to play around with code and create unexpected possibilities
+      using different coding languages.
+    </p>
+    <p>
+      董晶用编程做了很多有趣的实验并创造了意想不到的可能性.
+    </p>
+  </div>
+
+  <div class="visualframe">
+    <div class="row">
+      <div class="column">
+        <div class="container">
+          <a href="https://dongjing233.github.io/magic8ball/">
+            <img
+              src="https://cdn.glitch.me/a484e647-8b88-455d-846a-45ea71e03e81%2Fmagic8balls.png?v=1634787120994"
+              alt="Avatar"
+              class="image"
+              style="width:100%"
+            />
+            <div class="middle">
+              <div class="text">Magic 8 Ball</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="container">
+          <a href="https://project3-printer.glitch.me/">
+            <img
+              src="https://cdn.glitch.me/a484e647-8b88-455d-846a-45ea71e03e81%2Fprinter.jpg?v=1634787120975"
+              alt="Avatar"
+              class="image"
+              style="width:100%"
+            />
+            <div class="middle">
+              <div class="text">Printer</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="container">
+          <a href="https://project4-clock.glitch.me/">
+            <img
+              src="https://cdn.glitch.me/a484e647-8b88-455d-846a-45ea71e03e81%2FScreen%20Shot%202021-11-01%20at%2011.52.33%20PM.png?v=1635825375369"
+              alt="Avatar"
+              class="image"
+              style="width:100%"
+            />
+            <div class="middle">
+              <div class="text">Clock</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+</html>

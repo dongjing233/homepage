@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="../css/style.css" />
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>About</title>
+  </head>
+
+  <nav>
+    <button id="logo" type="button" class="collapsible"></button>
+    <div class="content">
+      <br /><br /><br /><br /><br /><br />
+
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+
+      <br /><br /><br />
+
+      <li><a href="MotionDesign.html">Motion Design</a></li>
+      <li><a href="javascript.html">Javascript</a></li>
+      <li><a href="UI+UX.html">UI/UX</a></li>
+      <li><a href="photography.html">Photography</a></li>
+      <li><a href="Typography.html">Visuals</a></li>
+
+      <br /><br /><br />
+      <li>
+        <a href="https://www.instagram.com/3daysdong/"
+          ><b>Instagram: @3daysdong</b></a
+        >
+      </li>
+    </div>
+  </nav>
+
+  <div class="textbox">
+    <header>About Jing</header>
+
+    <p>
+      Jing Dong (She/Her) is from Shanghai, China. She is studying Design and
+      Technology at Parsons School of Design.
+    </p>
+    <p>
+      Jing is a UI/UX designer, creative technologist, and motion designer.
+    </p>
+    <p>
+      She is a big fan of sci-fi, crime fiction, and comedies. Her favourite
+      band is New Pants. She likes to take exploration walks in the cities.
+    </p>
+
+    <br />
+    <br />
+    <header>关于她</header>
+
+    <p>
+      董晶来自中国上海.她在帕森斯设计学院学习科技与技术.
+    </p>
+    <p>
+      她是一位UI/UX设计师, 创意技术员, 动态设计师.
+    </p>
+    <p>
+      她喜欢科幻、犯罪悬疑、和喜剧电影.她最喜欢的乐队是新裤子.她平时的爱好是在城市里散步.
+    </p>
+    <br />
+    <br />
+  </div>
+
+  <div class="visualframe"></div>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+</html>
